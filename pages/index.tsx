@@ -52,6 +52,10 @@ export default function Feed(props: TFeed) {
           @apply p-4 text-xl;
         }
 
+        .info p {
+          @apply m-2;
+        }
+
         .info a {
           @apply underline text-black;
         }
@@ -86,7 +90,11 @@ export default function Feed(props: TFeed) {
           }
 
           .info {
-            @apply text-3xl;
+            @apply text-4xl;
+          }
+
+          .info p {
+            @apply m-4;
           }
 
           .image {
