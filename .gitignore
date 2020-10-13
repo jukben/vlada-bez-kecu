@@ -15,8 +15,6 @@
 # production
 /build
 
-/public/timeline
-
 # misc
 .DS_Store
 
