@@ -16,6 +16,8 @@ export const Info = () => {
           Nebavilo mě scrollovat na Instagramu, abych se dozvěděl, co se děje,
           tak jsem udělal tohle. Díky a čau,&nbsp;
           <a href="https://www.twitter.com/jukben/">Jakub&nbsp;Beneš</a>.
+          Mimochodem, tohle je{" "}
+          <a href="https://github.com/jukben/vlada-bez-kecu">Open Source.</a>
         </p>
       </div>
       <style jsx>{`
@@ -33,6 +35,12 @@ export const Info = () => {
 
         div a:hover {
           @apply no-underline;
+        }
+
+        @screen sm {
+          div {
+            @apply text-3xl;
+          }
         }
 
         @screen md {
