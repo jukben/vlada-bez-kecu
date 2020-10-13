@@ -1,4 +1,4 @@
-# VladaJasne.cz
+# VladaBezKecu.cz
 
 ## About
 

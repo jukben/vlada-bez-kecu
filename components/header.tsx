@@ -1,17 +1,21 @@
 import Head from "next/head";
 import * as React from "react";
 
+const isProduction = process.env.NODE_ENV === "production";
+
+const GA_TRACKING_ID = "UA-6746435-8";
+
 export const Header = () => (
   <>
     <Head>
-      <title>VládaJasně.cz</title>
+      <title>VládaBezKeců.cz</title>
       <meta
         name="description"
         content="Protože nejlepší komunikační kanál Vlády ČR je ten neoficiální od Dominika Feriho!"
       />
       <meta
         name="keywords"
-        content="Dominik Feri, Vlada Jasne, Vláda Jasně, Covid, Covid-19"
+        content="Dominik Feri, Vlada Bez Kecu, Vláda Bez Keců, Covid, Covid-19"
       />
       <meta name="robots" content="index, follow" />
       <meta name="author" content="Jakub Beneš" />
@@ -36,6 +40,25 @@ export const Header = () => (
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff"></meta>
+      {isProduction && (
+        <>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+            
+                gtag('config', '${GA_TRACKING_ID}');
+              `,
+            }}
+          />
+        </>
+      )}
     </Head>
 
     <style global jsx>{`
