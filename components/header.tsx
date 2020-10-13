@@ -8,14 +8,14 @@ const GA_TRACKING_ID = "UA-6746435-8";
 export const Header = () => (
   <>
     <Head>
-      <title>VládaJasně.cz</title>
+      <title>VládaBezKeců.cz</title>
       <meta
         name="description"
         content="Protože nejlepší komunikační kanál Vlády ČR je ten neoficiální od Dominika Feriho!"
       />
       <meta
         name="keywords"
-        content="Dominik Feri, Vlada Jasne, Vláda Jasně, Covid, Covid-19"
+        content="Dominik Feri, Vlada Bez Kecu, Vláda Bez Keců, Covid, Covid-19"
       />
       <meta name="robots" content="index, follow" />
       <meta name="author" content="Jakub Beneš" />
