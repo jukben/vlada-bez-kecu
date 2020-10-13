@@ -16,6 +16,8 @@ export const Image = ({ url, post }: TImage) => {
       <style jsx>{`
         img {
           @apply w-full;
+          /* remove the line Coco_Afro is adding to his posts. Hacking it :)*/
+          clip-path: polygon(0 99%, 100% 99%, 100% 0, 0 0);
         }
 
         div a {
